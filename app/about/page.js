@@ -6,20 +6,22 @@ import { CheckCircle2, Target, Users, Zap } from "lucide-react";
 const About = () => {
   return (
     <div className="w-full">
-      {/* 1. Hero Section - Themed Background */}
-      <section className="bg-[#ECE7D1] py-20 md:py-32 px-6">
+      {/* Hero Section */}
+      <section className="bg-[#ECE7D1] pt-12 pb-16 md:pt-20 md:pb-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center lg:-mt-10">
             {/* Left Content */}
             <div className="order-2 lg:order-1">
-              <div className="inline-block mb-6">
+              <div className="inline-block mb-4">
+                {" "}
                 <h3 className="text-xs md:text-sm font-bold tracking-[0.3em] uppercase text-gray-500">
                   Our Story
                 </h3>
                 <div className="h-[3px] w-12 bg-gradient-to-r from-orange-500 to-pink-500 rounded-full mt-3" />
               </div>
 
-              <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-8 tracking-tight leading-tight">
+              <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight leading-tight">
+                {" "}
                 Innovative 360° <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-500">
                   Digital Solutions.
@@ -48,12 +50,12 @@ const About = () => {
               </button>
             </div>
 
-            {/* Right Image - Pulse effect and Organic Shape */}
-            <div className="order-1 lg:order-2 relative flex justify-center">
+            {/* Right Image */}
+            <div className="order-1 lg:order-2 relative flex justify-center lg:-mt-6">
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] border-2 border-orange-300/20 rounded-full animate-pulse" />
 
               <div
-                className="relative w-full max-w-[480px] aspect-square overflow-hidden bg-white shadow-2xl shadow-orange-900/10"
+                className="relative w-full max-w-[420px] aspect-square overflow-hidden bg-white shadow-2xl shadow-orange-900/10"
                 style={{
                   borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%",
                 }}
@@ -69,7 +71,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* 2. Why Choose Us Section - White Background Contrast */}
+      {/* Why Choose Us Section  */}
       <section className="bg-white py-16 md:py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
