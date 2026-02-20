@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-center justify-between gap-8">
         {/* Content Section */}
         <div className="max-w-2xl text-center lg:text-left flex flex-col items-center lg:items-start z-10">
-          <h3 className="text-indigo-600 font-semibold mb-3 text-sm tracking-widest uppercase">
+          <h3 className="text-indigo-600 font-bold mb-3 text-sm tracking-widest uppercase">
             Welcome to Destino Infotech
           </h3>
 
