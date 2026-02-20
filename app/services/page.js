@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <div className="w-full bg-white">
       {/*Services Hero Section*/}
-      <section className="bg-[#ECE7D1] py-20 md:py-36 px-6 relative overflow-hidden">
+      <section className="bg-[#ECE7D1] py-12 md:py-20 px-6 relative overflow-hidden">
         {/* Abstract background*/}
         <div className="absolute top-0 -left-20 w-64 h-64 bg-orange-200/30 rounded-full blur-3xl" />
         <div className="absolute bottom-0 -right-20 w-96 h-96 bg-pink-200/20 rounded-full blur-3xl" />
