@@ -45,7 +45,7 @@ const Navbar = () => {
       <nav
         className={`
           sticky top-0 z-50 flex items-center justify-between gap-4 px-6 py-3 md:px-12
-          transition-all duration-300 border-none
+          transition-all duration-300 border-no
           ${
             scrolled
               ? "bg-[#ECE7D1]/90 backdrop-blur-md shadow-sm border-b border-black/10"
@@ -59,7 +59,7 @@ const Navbar = () => {
             <img
               src="/logo.png"
               alt="Logo"
-              className="h-10 md:h-12 cursor-pointer"
+              className="h-12 md:h-16 cursor-pointer"
             />
           </Link>
         </div>
