@@ -42,7 +42,7 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-end flex-shrink-0">
           <div className="w-full max-w-[450px] sm:max-w-[550px] lg:max-w-[600px] aspect-square flex-shrink-0">
             <DotLottieReact
-              src="https://lottie.host/23af36a8-15eb-4b28-889d-d676f2fd872d/5eOt18Iy5a.lottie"
+              src="https://lottie.host/cab71726-4a3e-4292-9976-47c5fb908b78/OpHVCXF1OM.lottie"
               loop
               autoplay
               //object-contain so that does not stretch
