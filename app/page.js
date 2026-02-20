@@ -4,6 +4,7 @@ import Hero from "@/app/components/Hero";
 import React from "react";
 import Process from "@/app/components/Process";
 import Features from "@/app/components/Features";
+import FAQ from "./components/Faq";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <DevService />
       <Process />
       <Features />
+      <FAQ />
     </>
   );
 };

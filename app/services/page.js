@@ -100,7 +100,7 @@ const Services = () => {
       <Process />
 
       {/* FAQS */}
-      <FAQ />
+      {/* <FAQ /> */}
 
       {/* Final Bottom CTA */}
       <section className="bg-white py-24 px-6 relative">
