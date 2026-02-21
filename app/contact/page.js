@@ -8,7 +8,7 @@ import "react-phone-number-input/style.css";
 
 const Contact = () => {
   const formRef = useRef();
-  const formSectionRef = useRef(null); // Ref for scrolling
+  const formSectionRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [phoneValue, setPhoneValue] = useState();
@@ -19,6 +19,13 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Manual check for PhoneInput since it's a custom component
+    if (!phoneValue) {
+      alert("Please enter a valid phone number.");
+      return;
+    }
+
     setLoading(true);
 
     const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
@@ -95,8 +102,7 @@ const Contact = () => {
                   At Destino Infotech, we specialize in turning complex
                   challenges into seamless digital experiences. Whether you’re a
                   startup ready to launch or an enterprise seeking optimization,
-                  our team is here to ensure your brand stays ahead in an
-                  ever-evolving technological landscape.
+                  our team is here to ensure your brand stays ahead.
                 </p>
               </div>
 
@@ -140,8 +146,8 @@ const Contact = () => {
                   <span className="text-orange-500">Fill out the form.</span>
                 </h3>
                 <p className="text-gray-500 mt-2">
-                  Provide a few details and our experts will get back to you
-                  within 24 hours.
+                  All fields are required. We'll get back to you within 24
+                  hours.
                 </p>
               </div>
 
@@ -157,6 +163,7 @@ const Contact = () => {
                   <input
                     type="text"
                     name="from_last_name"
+                    required
                     placeholder="Last Name"
                     className="w-full px-6 py-4 bg-[#ECE7D1]/30 border-none rounded-full focus:ring-2 focus:ring-orange-200 outline-none text-gray-800"
                   />
@@ -178,6 +185,7 @@ const Contact = () => {
                     value={phoneValue}
                     onChange={setPhoneValue}
                     name="phone_number"
+                    required
                     className="w-full px-6 py-4 bg-[#ECE7D1]/30 border-none rounded-full focus-within:ring-2 focus-within:ring-orange-200 outline-none text-gray-800"
                   />
                 </div>
@@ -200,7 +208,11 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className={`w-full md:w-fit text-white rounded-full px-12 py-4 text-sm font-bold shadow-lg transition-all uppercase tracking-widest flex items-center justify-center gap-2 ${success ? "bg-green-500" : "bg-gradient-to-r from-orange-500 to-pink-500 active:scale-95 hover:opacity-90"}`}
+                  className={`w-full md:w-fit text-white rounded-full px-12 py-4 text-sm font-bold shadow-lg transition-all uppercase tracking-widest flex items-center justify-center gap-2 ${
+                    success
+                      ? "bg-green-500"
+                      : "bg-gradient-to-r from-orange-500 to-pink-500 active:scale-95 hover:opacity-90"
+                  }`}
                 >
                   {loading ? (
                     "Sending..."
@@ -223,7 +235,7 @@ const Contact = () => {
         <iframe
           title="Destino Infotech Location"
           className="w-full h-full border-0"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.123456789!2d72.8333!3d19.1833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDExJzAwLjAiTiA3MsKwNTAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.1256333682!2d72.8344186759751!3d19.190807548737207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6e4e5080001%3A0x6b8720456181f08e!2sAditya%20Industrial%20Estate!5e0!3m2!1sen!2sin!4v1709123456789"
           allowFullScreen=""
           loading="lazy"
         />
