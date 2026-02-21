@@ -20,3 +20,11 @@
     animation-play-state: paused;
   } */
 }
+
+.PhoneInputInput {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  color: #1f2937;
+}
