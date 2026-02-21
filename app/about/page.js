@@ -2,6 +2,7 @@
 
 import React from "react";
 import { CheckCircle2, Target, Users, Zap } from "lucide-react";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -45,9 +46,11 @@ const About = () => {
                 precision.
               </p>
 
-              <button className="w-full sm:w-auto text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded-full px-10 py-4 text-sm font-bold shadow-lg active:scale-95 transition-all uppercase tracking-wider">
-                Get in Touch
-              </button>
+              <Link href="/contact">
+                <button className="w-full sm:w-auto text-white bg-gradient-to-br from-pink-500 to-orange-400 rounded-full px-10 py-4 text-sm font-bold shadow-lg active:scale-95 transition-all uppercase tracking-wider">
+                  Get in Touch
+                </button>
+              </Link>
             </div>
 
             {/* Right Image */}
